@@ -12,7 +12,7 @@
 <body>
     <div class="container">
         <h1>Which Fisheye?</h1>
-        <select id="dropdown">
+        <select id="cameraMount">
             <option value="">Select a camera mount</option>
             <option value="canon">Canon</option>
             <option value="nikon">Nikon</option>
@@ -27,11 +27,13 @@
             <option value="pl-cine">PL - Cine</option>
         </select>
         <br>
+        <select id="lensOptions" style="display: none;">
+            <option value="">Select a lens</option>
+        </select>
+        <br>
         <input type="text" id="search" placeholder="Search...">
     </div>
 
-    <script>
-        //  add JavaScript functionality here later i guess
-    </script>
+    <script src="selectmount.js"></script>
 </body>
 </html>
