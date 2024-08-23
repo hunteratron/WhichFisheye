@@ -33,3 +33,18 @@ select, input {
 #lensOptions {
     margin-top: 0.5rem;
 }
+#goFishButton {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#goFishButton:hover {
+    background-color: #45a049;
+}
