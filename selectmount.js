@@ -8,12 +8,12 @@ document.addEventListener('DOMContentLoaded', function() {
         nikon: ['F', 'Z'],
         sony: ['E', 'A'],
         fujifilm: ['X', 'G'],
-        'micro-four-thirds': ['Micro Four Thirds'],
         panasonic: ['L'],
         leica: ['M', 'L'],
         sigma: ['SA'],
         pentax: ['K'],
         hasselblad: ['X', 'H'],
+        'micro-four-thirds': ['Micro Four Thirds'],
         'pl-cine': ['PL']
     };
 
@@ -52,12 +52,12 @@ function updateGoFishButton() {
 
 lensOptionsSelect.addEventListener('change', updateGoFishButton);
 
-// document.getElementById('goFishButton').addEventListener('click', function(e) {
-//     e.preventDefault();
-//     const brand = cameraMountSelect.value;
-//     const mount = lensOptionsSelect.value;
-//     if (brand && mount) {
-//         // Replace this with actual URL when you create the category pages
-//         alert(`You would navigate to the ${brand} ${mount} category page`);
-//     }
-// });
+/* document.getElementById('goFishButton').addEventListener('click', function(e) {
+     e.preventDefault();
+     const brand = cameraMountSelect.value;
+     const mount = lensOptionsSelect.value;
+     if (brand && mount) {
+         // Replace this with actual URL when you create the category pages
+         alert(`You would navigate to the ${brand} ${mount} category page`);
+     }
+ }); */ 
