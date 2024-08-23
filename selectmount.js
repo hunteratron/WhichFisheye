@@ -37,8 +37,14 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 function updateGoFishButton() {
     const goFishButton = document.getElementById('goFishButton');
-    if (cameraMountSelect.value && lensOptionsSelect.value) {
+    const brand = cameraMountSelect.value;
+    const mount = lensOptionsSelect.value;
+    
+    if (brand && mount) {
         goFishButton.style.display = 'block';
+        // Construct the URL
+        const url = `./mount/${brand}-${mount.toLowerCase().replace(' ', '-')}.html`;
+        goFishButton.setAttribute('href', url);
     } else {
         goFishButton.style.display = 'none';
     }
@@ -46,12 +52,12 @@ function updateGoFishButton() {
 
 lensOptionsSelect.addEventListener('change', updateGoFishButton);
 
-document.getElementById('goFishButton').addEventListener('click', function(e) {
-    e.preventDefault();
-    const brand = cameraMountSelect.value;
-    const mount = lensOptionsSelect.value;
-    if (brand && mount) {
-        // Replace this with actual URL when you create the category pages
-        alert(`You would navigate to the ${brand} ${mount} category page`);
-    }
-});
+// document.getElementById('goFishButton').addEventListener('click', function(e) {
+//     e.preventDefault();
+//     const brand = cameraMountSelect.value;
+//     const mount = lensOptionsSelect.value;
+//     if (brand && mount) {
+//         // Replace this with actual URL when you create the category pages
+//         alert(`You would navigate to the ${brand} ${mount} category page`);
+//     }
+// });
