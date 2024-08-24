@@ -1,0 +1,36 @@
+TODO SHORT TERM
+    - Build boilerplate for lens mount page
+    - Create big ol list of every fisheye on the market (B&H?)
+    - Make boilerplate for lens details page
+    - Build out all category pages
+    - Start building out lens deet pages
+    - Basic Styling
+
+
+ONCE CONTENT IS THERE:
+    - Make the search box work
+    - More styling
+    - Affiliate Links
+    - Images
+    - Navbar?
+    - Responsive Design for Mobile
+    - Analytics & GSC
+    - Priv Policy, Terms and Cons, Cookies
+    - Contact page?
+
+
+
+
+LONGTAIL FEATURES
+
+AI generated review summaries
+Compare Tool
+Our Pick: 
+UGC sample photos
+Price history charts & Price alerts
+Ratings like top trumps ie sharpness/durability etc
+Social Sharing?
+Filters for price/brand/focal length
+Top level buying guide
+SEO - tutorials, reviews, explainers etc
+Multilingual support & Multi-region aff Links
