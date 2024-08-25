@@ -1,0 +1,31 @@
+Canon
+    EF
+    EF-S
+    RF
+Nikon
+    F
+    Z
+Sony
+    E
+    A
+Fujifilm 
+    ['X', 'G'],
+
+Panasonic 
+    ['L'],
+
+Leica 
+    ['M', 'L'],
+
+Sigma 
+    ['SA'],
+
+Pentax 
+    ['K'],
+
+Hasselblad 
+    ['X', 'H'],
+
+PL 
+
+MFT
