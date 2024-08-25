@@ -49,3 +49,39 @@ select, input {
 #goFishButton:hover {
     background-color: #45a049;
 }
+.site-header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.home-link {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.home-link:hover {
+    text-decoration: underline;
+}
+
+/* Adjust the body and container to accommodate the header */
+body {
+    padding-top: 60px; /* Adjust this value based on your header height */
+}
+
+.sidebar {
+    top: 60px; /* Adjust this value to match the body padding-top */
+    height: calc(100vh - 60px); /* Subtract the header height from the sidebar height */
+}
+
+.container {
+    margin-top: 20px; /* Add some space between the header and the main content */
+}
