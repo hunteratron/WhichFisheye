@@ -11,6 +11,34 @@
         <script src="https://kit.fontawesome.com/9812b92aa4.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <nav class="sidebar">
+        <h2>Lens Mounts</h2>
+        <ul>
+            <li>
+                <span class="brand">Canon <i class="arrow">▼</i></span>
+                <ul class="submenu">
+                    <li><a href="canon-rf.html" class="active">RF Mount</a></li>
+                    <li><a href="canon-ef.html">EF Mount</a></li>
+                    <li><a href="canon-ef-s.html">EF-S Mount</a></li>
+                </ul>
+            </li>
+            <li>
+                <span class="brand">Nikon <i class="arrow">▼</i></span>
+                <ul class="submenu">
+                    <li><a href="nikon-f.html">F Mount</a></li>
+                    <li><a href="nikon-z.html">Z Mount</a></li>
+                </ul>
+            </li>
+            <li>
+                <span class="brand">Sony <i class="arrow">▼</i></span>
+                <ul class="submenu">
+                    <li><a href="sony-e.html">E Mount</a></li>
+                    <li><a href="sony-a.html">A Mount</a></li>
+                </ul>
+            </li>
+            <!-- Add more brands and their submounts here -->
+        </ul>
+    </nav>
     <div class="container">
         <h1>Canon RF Mount Fisheye Lenses</h1>
         
@@ -48,5 +76,33 @@
 
         </div>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const brands = document.querySelectorAll('.sidebar .brand');
+            
+            brands.forEach(brand => {
+                brand.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                    const submenu = this.nextElementSibling;
+                    submenu.classList.toggle('active');
+                    const arrow = this.querySelector('.arrow');
+                    arrow.style.transform = submenu.classList.contains('active') ? 'rotate(180deg)' : '';
+                });
+            });
+        
+            // Expand the submenu of the active page
+            const activePage = document.querySelector('.sidebar a.active');
+            if (activePage) {
+                const parentSubmenu = activePage.closest('.submenu');
+                if (parentSubmenu) {
+                    parentSubmenu.classList.add('active');
+                    const parentBrand = parentSubmenu.previousElementSibling;
+                    parentBrand.classList.add('active');
+                    const arrow = parentBrand.querySelector('.arrow');
+                    arrow.style.transform = 'rotate(180deg)';
+                }
+            }
+        });
+        </script>
 </body>
 </html>
