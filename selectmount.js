@@ -42,7 +42,7 @@ function updateGoFishButton() {
     if (brand && mount) {
         goFishButton.style.display = 'block';
         // Construct the URL
-        const url = `./mount/${brand}-${mount.toLowerCase().replace(' ', '-')}.php`;
+        const url = `./mount/${brand}-${mount.toLowerCase().replace(' ', '-')}.html`;
         goFishButton.setAttribute('href', url);
     } else {
         goFishButton.style.display = 'none';
