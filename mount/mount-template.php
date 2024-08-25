@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $mount_name; ?> Fisheye Lenses | Which Fisheye?</title>
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../stylesheet.css">
 </head>
 <body>
     <?php include 'header.php'; ?>
